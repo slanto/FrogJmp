@@ -1,10 +1,13 @@
-﻿namespace FrogJmp.Core
+﻿using System;
+
+namespace FrogJmp.Core
 {
     public class Solution
     {
         public int GetFrogJump(int X, int Y, int D)
         {
-            return 3; 
+            double oper = (Y - X) / (double) D;
+            return (int)Math.Ceiling(oper);
         }
     }
 }
